@@ -3,16 +3,16 @@ const mongoose = require("mongoose");
 const StorageScheme = new mongoose.Schema(
     {
         url: {
-            type:String
+            type: String
         },
-        filename:{
-            type:String  // comprobar
+        filename: {
+            type: String
         }
     },
     {
-        timestamps:true,
-        versionKey:false
+        timestamps: true,
+        versionKey: false
     }
 );
 
-module.exports = mongoose.model("storages",StorageScheme);
+module.exports = mongoose.model("storages", StorageScheme);
